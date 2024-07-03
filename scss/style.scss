@@ -8,7 +8,7 @@
 // container
 .container {
     width: 100%;
-    max-width: 1500px;
+    padding: 0 100px;
     margin: 0 auto;
 }
 // container end
@@ -246,9 +246,7 @@
 
 // carousel
 .carousel {
-    height: 600px;
     position: relative;
-    z-index: -1;
     .slick-arrow {
         cursor: pointer;
         position: absolute;
