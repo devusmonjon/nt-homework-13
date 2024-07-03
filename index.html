@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon - online internet store</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link href="
+    https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css
+    " rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar__wrapper">
+                <a href="#" class="navbar__logo" title="Amazon">
+                    <span></span>
+                </a>
+                <div class="navbar__location">
+                    <i class="fa-solid"></i>
+                    <a class="location">
+                        <p>Deliver to</p>
+                        <b>Uzbekistan</b>
+                    </a>
+                </div>
+                <form class="search">
+                    <select class="all" title="category">
+                        <option value="all">All</option>
+                    </select>
+                    <input type="text" placeholder="Search amazon">
+                    <button class="search-btn" type="submit" title="search">
+                        <span></span>
+                    </button>
+                </form>
+                <div class="navbar__collection">
+                    <i onclick="toggleShow()" class="fa-solid fa-xmark"></i>
+                    <div class="location">
+                        <p>Hello,sign in</p>
+                        <b>Account & Lists</b>
+                    </div>
+                    <div class="location">
+                        <p>Returns</p>
+                        <b>& Orders</b>
+                    </div>
+                    <div class="cart">
+
+                        <span class="icon"></span>Cart
+                    </div>
+                </div>
+                <div onclick="toggleShow()" class="navbar__menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header end -->
+
+    <!-- main -->
+    <main>
+        <!-- hero -->
+        <section class="hero">
+            <div class="hero__context">
+                <a href="#">
+                    <i class="fa-solid fa-bars"></i>
+                    All
+                </a>
+                <a href="#">Today's Deals</a>
+                <a href="#">Customer Service</a>
+                <a href="#">Registry</a>
+                <a href="#">Gift Cards</a>
+                <a href="#">Sell</a>
+            </div>
+        </section>
+        <!-- hero -->
+
+        <section class="carousel">
+            <div class="container" id="carousel" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+                <div>
+                    <img src="./assets/images/slider-1.jpg" alt="Slider">
+                </div>
+                <div>
+                    <img src="./assets/images/slider-2.jpg" alt="Slider">
+                </div>
+                <div>
+                    <img src="./assets/images/slider-3.jpg" alt="Slider">
+                </div>
+                <div>
+                    <img src="./assets/images/slider-4.jpg" alt="Slider">
+                </div>
+                <div>
+                    <img src="./assets/images/slider-5.jpg" alt="Slider">
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <!-- main end -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="
+    https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js
+    "></script>
+    <script>
+        const carouselElement = document.querySelector('#carousel');
+
+        $(carouselElement).slick({
+            arrows: false
+        })
+    </script>
+
+</body>
+
+</html>
